@@ -1,0 +1,107 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgb(114, 113, 113);
+  border-radius: 10px;
+  height: 200px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+.search-bar {
+  border: none;
+  outline: none;
+  width: 450px;
+}
+
+.search-bar.dark {
+  background-color: black;
+  color: white;
+}
+
+.category-btn {
+  font-weight: bold !important;
+  text-transform: capitalize;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  cursor: pointer;
+  background: transparent;
+  outline: none;
+  border: none;
+  padding: 11px;
+  transition: all 0.5s ease;
+}
+
+.category-btn:hover {
+  background-color: rgba(0, 0, 0, 0.1) !important;
+}
+
+.category-btn.dark:hover {
+  background-color: rgba(233, 233, 233, 0.4) !important;
+}
+
+.category-btn:hover span {
+  color: black !important;
+}
+
+.category-btn.dark:hover span {
+  color: white !important;
+}
+
+.react-player {
+  height: 77vh !important;
+  width: 100% !important;
+}
+
+@media screen and (max-width: 900px) {
+  .category-btn {
+    margin: 10px 0;
+  }
+
+  .search-bar {
+    width: 350px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .search-bar {
+    width: 250px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .scroll-horizontal {
+    overflow: auto !important;
+  }
+
+  .react-player {
+    height: 50vh !important;
+  }
+  .search-bar {
+    width: 350px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .search-bar {
+    width: 150px;
+  }
+}
